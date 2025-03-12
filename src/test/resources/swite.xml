@@ -1,0 +1,23 @@
+<suite name="Web Automation Suite">
+    <parameter name="url" value="https://www.saucedemo.com/" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="firstName" value="Brandon" />
+    <parameter name="lastName" value="Forero" />
+    <parameter name="postalCode" value="123456" />
+    <parameter name="confirmationMessage" value="Thank you for your order!" />
+    <test name="Purchase Test">
+        <classes>
+            <class name="tests.PurchaseTest" />
+        </classes>
+    </test>
+    <test name="Remove cart items Test">
+        <classes>
+            <class name="tests.RemoveCartItemsTest" />
+        </classes>
+    </test>
+    <test name="Logout Test">
+        <classes>
+            <class name="tests.LogoutTest" />
+        </classes>
+    </test>
+</suite>
